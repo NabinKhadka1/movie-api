@@ -1,0 +1,13 @@
+.carousel .carousel-item {
+  height: 600px; /* Set the height of carousel items */
+  display: flex; /* Use flexbox to align image vertically */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.carousel .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto; /* Ensure the image does not stretch */
+  height: auto; /* Ensure the image does not stretch */
+}
