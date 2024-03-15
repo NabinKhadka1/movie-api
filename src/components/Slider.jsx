@@ -25,10 +25,10 @@ const Slider = () => {
   return (
     <Carousel className="pt-2">
       {movies?.map((movie) => (
-        <div key={movie.id} className="h-[500px]">
+        <div key={movie.id} className="h-[600px]">
           <img
             className="w-full h-full object-contain"
-            src={`${imgPath}${movie.poster_path}`}
+            src={`${imgPath}${movie.backdrop_path}`}
             alt={movie.title}
           />
           <div className="legend">
