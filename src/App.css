@@ -1,24 +1,39 @@
-body{
-    @apply bg-primary;
+body {
+  @apply bg-primary;
 }
-.carousel .slide img{
-    opacity: 0.5;
+.carousel .slide img {
+  opacity: 0.5;
 }
 .carousel.carousel-slider .control-arrow:hover {
-    background: #dbdde7;
+  background: #dbdde7;
 }
-.carousel .slide .legend{
-    background: transparent;
-    opacity: 1;
-    left: 3%;
-    margin-left: 0%;
-    width: 40%;
-    text-align: left;
+.carousel .slide .legend {
+  background: transparent;
+  opacity: 1;
+  left: 3%;
+  width: 75%;
+  margin-left: 0%;
+  text-align: left;
 }
-.slick-prev{
-    left: 15px !important;
-    z-index: 1000;
+@media screen and (min-width: 640px) {
+  .carousel .slide .legend {
+    width: 60%;
+  }
 }
-.slick-next{
-    right: 15px !important;
+@media screen and (min-width: 768px) {
+  .carousel .slide .legend {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel .slide .legend {
+    width: 35%;
+  }
+}
+.slick-prev {
+  left: 15px !important;
+  z-index: 1000;
+}
+.slick-next {
+  right: 15px !important;
 }

@@ -19,7 +19,9 @@ const Slider = () => {
     );
   }
   if (loading) {
-    return <div className="flex justify-center text-white mt-5">Loading...</div>;
+    return (
+      <div className="flex justify-center text-white mt-5">Loading...</div>
+    );
   }
 
   return (
@@ -31,7 +33,7 @@ const Slider = () => {
             src={`${imgPath}${movie.backdrop_path}`}
             alt={movie.title}
           />
-          <div className="legend">
+          <div className="legend sm:legendsm md:legendmd lg:legendlg">
             <span className="text-4xl font-semibold text-white">
               {movie.title}
             </span>

@@ -1,8 +1,9 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 const Header = () => {
   return (
-    <div className='shadow h-14 bg-slate-200'>Header</div>
+    <Navbar />
   )
 }
 
