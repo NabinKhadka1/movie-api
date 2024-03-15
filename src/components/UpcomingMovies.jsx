@@ -64,7 +64,7 @@ const UpcomingMovies = () => {
     <div className="my-8">
       <div className="px-5 mb-3 flex justify-between items-center">
         <h2 className="text-white font-bold text-3xl">Upcoming Movies</h2>
-        <Link className="text-slate-200 underline" to="/more">View More &gt;&gt;</Link>
+        <Link className="text-slate-200 underline" to="/filter/movie">View More &gt;&gt;</Link>
       </div>
       <Slider {...settings} className="px-5">
         {movies?.map((movie) => (

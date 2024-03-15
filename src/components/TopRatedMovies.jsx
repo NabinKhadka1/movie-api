@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { topRatedMoviesSlider} from "../features/topRatedMovieSlice";
+import { topRatedMoviesSlider } from "../features/topRatedMovieSlice";
 import { imgPath } from "../features/api";
 import { Link } from "react-router-dom";
 
@@ -64,7 +64,9 @@ const TopRatedMovies = () => {
     <div className="my-8">
       <div className="px-5 mb-3 flex justify-between items-center">
         <h2 className="text-white font-bold text-3xl">Top Rated Movies</h2>
-        <Link className="text-slate-200 underline" to="/more">View More &gt;&gt;</Link>
+        <Link className="text-slate-200 underline" to="/filter/movie">
+          View More &gt;&gt;
+        </Link>
       </div>
       <Slider {...settings} className="px-5">
         {movies?.map((movie) => (

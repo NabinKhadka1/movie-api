@@ -25,7 +25,7 @@ const Slider = () => {
   }
 
   return (
-    <Carousel className="pt-2">
+    <Carousel>
       {movies?.map((movie) => (
         <div key={movie.id} className="h-[600px]">
           <img
